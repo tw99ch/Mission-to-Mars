@@ -16,7 +16,7 @@ def scrape_all():
       "news_paragraph": news_paragraph,
       "featured_image": featured_image(browser),
       "facts": mars_facts(),
-      "hemispheres": hemispheres(browser),
+      "hemispheres": hemisphere(browser),
       "last_modified": dt.datetime.now()
    }
 # In[2]:
@@ -129,7 +129,7 @@ def mars_facts():
 
 # In[18]:
 
-def hemispheres(browser):
+def hemisphere(browser):
 
 # 1. Use browser to visit the URL 
     url = 'https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars'
